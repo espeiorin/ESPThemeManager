@@ -1,0 +1,52 @@
+{
+  "defined": {
+    "titleFont": [
+      "Plasmatic",
+      30
+    ],
+    "titleColor": [
+      "#FF0000",
+      1
+    ]
+  },
+  "label": {
+    "font": "titleFont",
+    "color": "titleColor"
+  },
+  "imageView": {
+    "image": [
+      "horse",
+      "png"
+    ]
+  },
+  "button": {
+    "font": [
+      "HelveticaNeue-Thin",
+      20
+    ],
+    "normal": {
+      "color": [
+        "#00AB00",
+        1
+      ]
+    },
+    "highlighted": {
+      "color": [
+        "#0000FF",
+        1
+      ]
+    },
+    "selected": {
+      "color": [
+        "#00FF00",
+        1
+      ]
+    },
+    "disabled": {
+      "color": [
+        "#CCCCCC",
+        1
+      ]
+    }
+  }
+}

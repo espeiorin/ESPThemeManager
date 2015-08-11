@@ -1,0 +1,46 @@
+{
+  "defined": {
+    "preColor": [
+      "#ABCABC",
+      1
+    ],
+    "preFont": [
+      "HelveticaNeue-Light",
+      15
+    ],
+    "preImage": [
+      "horse",
+      "png"
+    ]
+  },
+  "existent": {
+    "color": [
+      "#334455",
+      1
+    ],
+    "image": [
+      "horse",
+      "png"
+    ],
+    "font": [
+      "HelveticaNeue-Thin",
+      14
+    ]
+  },
+  "invalid": {
+    "font": [
+      
+    ],
+    "image": [
+      
+    ],
+    "color": [
+      
+    ]
+  },
+  "pre": {
+    "definedColor": "preColor",
+    "definedFont": "preFont",
+    "definedImage": "preImage"
+  }
+}
