@@ -14,10 +14,7 @@
     "color": "titleColor"
   },
   "imageView": {
-    "image": [
-      "horse",
-      "png"
-    ]
+    "image": "horse"
   },
   "button": {
     "font": [

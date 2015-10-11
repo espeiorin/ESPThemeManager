@@ -13,7 +13,7 @@
 		BC63A5191B781D1D00F3AC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC63A5171B781D1D00F3AC1E /* Main.storyboard */; };
 		BC63A51B1B781D1D00F3AC1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC63A51A1B781D1D00F3AC1E /* Images.xcassets */; };
 		BC63A51E1B781D1D00F3AC1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC63A51C1B781D1D00F3AC1E /* LaunchScreen.xib */; };
-		BCC8C2E01B7A233700498043 /* TestTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCC8C2DF1B7A233700498043 /* TestTheme.bundle */; };
+		BC9E30661BCA614800BFEC06 /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = BC9E30651BCA614800BFEC06 /* index.json */; settings = {ASSET_TAGS = (); }; };
 		BCC8C3451B7A32D000498043 /* ESPThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C3421B7A32D000498043 /* ESPThemeManager.m */; };
 		BCC8C3461B7A32D000498043 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C3441B7A32D000498043 /* UIColor+Hex.m */; };
 		BCC8C3481B7A348E00498043 /* plasmati.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCC8C3471B7A348E00498043 /* plasmati.ttf */; };
@@ -30,7 +30,7 @@
 		BC63A5181B781D1D00F3AC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC63A51A1B781D1D00F3AC1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC63A51D1B781D1D00F3AC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BCC8C2DF1B7A233700498043 /* TestTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestTheme.bundle; sourceTree = "<group>"; };
+		BC9E30651BCA614800BFEC06 /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
 		BCC8C3411B7A32D000498043 /* ESPThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESPThemeManager.h; path = ../../../Classes/ESPThemeManager.h; sourceTree = "<group>"; };
 		BCC8C3421B7A32D000498043 /* ESPThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESPThemeManager.m; path = ../../../Classes/ESPThemeManager.m; sourceTree = "<group>"; };
 		BCC8C3431B7A32D000498043 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "../../../Classes/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -73,10 +73,8 @@
 				BC63A5121B781D1D00F3AC1E /* AppDelegate.m */,
 				BC63A5141B781D1D00F3AC1E /* ViewController.h */,
 				BC63A5151B781D1D00F3AC1E /* ViewController.m */,
-				BCC8C3471B7A348E00498043 /* plasmati.ttf */,
+				BC9E30671BCA615500BFEC06 /* Resources */,
 				BC63A5171B781D1D00F3AC1E /* Main.storyboard */,
-				BCC8C2DF1B7A233700498043 /* TestTheme.bundle */,
-				BC63A51A1B781D1D00F3AC1E /* Images.xcassets */,
 				BC63A51C1B781D1D00F3AC1E /* LaunchScreen.xib */,
 				BC63A50D1B781D1D00F3AC1E /* Supporting Files */,
 			);
@@ -101,6 +99,16 @@
 				BCC8C3441B7A32D000498043 /* UIColor+Hex.m */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		BC9E30671BCA615500BFEC06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCC8C3471B7A348E00498043 /* plasmati.ttf */,
+				BC9E30651BCA614800BFEC06 /* index.json */,
+				BC63A51A1B781D1D00F3AC1E /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9E30661BCA614800BFEC06 /* index.json in Resources */,
 				BC63A5191B781D1D00F3AC1E /* Main.storyboard in Resources */,
 				BCC8C3481B7A348E00498043 /* plasmati.ttf in Resources */,
 				BC63A51E1B781D1D00F3AC1E /* LaunchScreen.xib in Resources */,
 				BC63A51B1B781D1D00F3AC1E /* Images.xcassets in Resources */,
-				BCC8C2E01B7A233700498043 /* TestTheme.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

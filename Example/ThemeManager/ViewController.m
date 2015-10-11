@@ -41,9 +41,8 @@
         return _themeManager;
     }
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"TestTheme" ofType:@"bundle"];
-    NSBundle *bundle = [[NSBundle alloc] initWithPath:path];
-    _themeManager = [[ESPThemeManager alloc] initWithBundle:bundle];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"json"];
+    _themeManager = [[ESPThemeManager alloc] initWithJSONFile:jsonPath];
     
     return _themeManager;
 }

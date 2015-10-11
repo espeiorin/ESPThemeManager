@@ -10,7 +10,7 @@
 
 @interface ESPThemeManager : UIView
 
-- (instancetype) initWithBundle:(NSBundle *)bundle;
+- (instancetype) initWithJSONFile:(NSString *)jsonFile;
 
 - (UIFont *) themedFont:(NSString *)fontPath;
 - (UIColor *) themedColor:(NSString *)colorPath;

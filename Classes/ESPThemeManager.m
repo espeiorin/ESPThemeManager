@@ -11,7 +11,7 @@
 
 @interface ESPThemeManager ()
 
-@property (nonatomic, copy) NSBundle *bundle;
+@property (nonatomic, strong) NSString *themeFile;
 @property (nonatomic, strong) NSDictionary *themeData;
 @property (nonatomic, strong) NSDictionary *variables;
 
@@ -19,9 +19,9 @@
 
 @implementation ESPThemeManager
 
-- (instancetype) initWithBundle:(NSBundle *)bundle {
+- (instancetype) initWithJSONFile:(NSString *)jsonFile {
     
-    NSAssert(bundle, @"Bundle Object must not be nil");
+    NSAssert(jsonFile, @"JSONFile must not be nil");
     
     self = [super init];
     
@@ -29,7 +29,7 @@
         return nil;
     }
     
-    _bundle = bundle;
+    _themeFile = jsonFile;
     
     [self loadBundle];
     
@@ -37,13 +37,13 @@
 }
 
 - (void) loadBundle {
-    NSString *jsonPath = [_bundle pathForResource:@"index" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    NSAssert(jsonData, @"Invalid JSON index file");
+    NSData *jsonData = [NSData dataWithContentsOfFile:self.themeFile];
+    NSAssert(jsonData, @"Invalid JSON index file, it must contain the complete file path");
     
     NSError *parseError;
-    _themeData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&parseError];
+    _themeData = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                 options:NSJSONReadingAllowFragments
+                                                   error:&parseError];
     
     NSAssert(!parseError, @"Invalid JSON data");
     
@@ -88,20 +88,10 @@
     
     NSAssert(imagePath, @"Image Path must not be nil");
     
-    NSArray *imageData = [self.themeData valueForKeyPath:imagePath];
-    
-    if ([imageData isKindOfClass:[NSString class]]) {
-        imageData = self.variables[imageData];
-    }
-    
-    NSAssert(imageData, @"You must request a valid image path");
-    NSAssert(imageData.count == 2, @"Invalid image data");
-    
-    NSString *filePath = [self.bundle pathForResource:imageData[0] ofType:imageData[1]];
-    
-    NSAssert(filePath, @"Invalid image file path");
+    NSString *imageName = [self.themeData valueForKeyPath:imagePath];
+    NSAssert(imageName, @"You must request a valid image path");
 
-    return [UIImage imageWithContentsOfFile:filePath];
+    return [UIImage imageNamed:imageName];
 }
 
 @end
