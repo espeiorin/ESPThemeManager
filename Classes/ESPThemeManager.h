@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface ESPThemeManager : UIView
+@interface ESPThemeManager : NSObject
 
 - (instancetype) initWithJSONFile:(NSString *)jsonFile;
 
