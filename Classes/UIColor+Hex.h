@@ -10,6 +10,6 @@
 
 @interface UIColor (Hex)
 
-+ (instancetype) esp_colorFromHexString:(NSString *)hexString;
++ (nullable instancetype) esp_colorFromHexString:(nonnull NSString *)hexString;
 
 @end

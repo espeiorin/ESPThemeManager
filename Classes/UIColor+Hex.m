@@ -10,7 +10,7 @@
 
 @implementation UIColor (Hex)
 
-+ (instancetype) esp_colorFromHexString:(NSString *)hexString {
++ (nullable instancetype) esp_colorFromHexString:(nonnull NSString *)hexString {
     
     unsigned int rgbValue = [self esp_unsignedIntFromHexString:hexString];
     
@@ -20,7 +20,7 @@
                            alpha:1.0];
 }
 
-+ (unsigned int) esp_unsignedIntFromHexString:(NSString *)hexStr
++ (unsigned int) esp_unsignedIntFromHexString:(nonnull NSString *)hexStr
 {
     unsigned int hexInt = 0;
     
