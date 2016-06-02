@@ -8,20 +8,14 @@
       "HelveticaNeue-Light",
       15
     ],
-    "preImage": [
-      "horse",
-      "png"
-    ]
+    "preImage": "horse"
   },
   "existent": {
     "color": [
       "#334455",
       1
     ],
-    "image": [
-      "horse",
-      "png"
-    ],
+    "image": "horse",
     "font": [
       "HelveticaNeue-Thin",
       14
@@ -31,9 +25,7 @@
     "font": [
       
     ],
-    "image": [
-      
-    ],
+    "image": "",
     "color": [
       
     ]

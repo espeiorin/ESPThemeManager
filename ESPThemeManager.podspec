@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ESPThemeManager"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "ESPThemeManager is a lightweight theme manager for iOS"
 
   s.description  = <<-DESC
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/espeiorin/ESPThemeManager.git", :tag => "0.0.4" }
+  s.source       = { :git => "https://github.com/espeiorin/ESPThemeManager.git", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

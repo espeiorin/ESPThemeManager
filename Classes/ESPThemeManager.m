@@ -11,15 +11,15 @@
 
 @interface ESPThemeManager ()
 
-@property (nonatomic, strong) NSString *themeFile;
-@property (nonatomic, strong) NSDictionary *themeData;
-@property (nonatomic, strong) NSDictionary *variables;
+@property (nonnull, nonatomic, strong) NSString *themeFile;
+@property (nonnull, nonatomic, strong) NSDictionary *themeData;
+@property (nonnull, nonatomic, strong) NSDictionary *variables;
 
 @end
 
 @implementation ESPThemeManager
 
-- (instancetype) initWithJSONFile:(NSString *)jsonFile {
+- (nullable instancetype) initWithJSONFile:(nonnull NSString *)jsonFile {
     
     NSAssert(jsonFile, @"JSONFile must not be nil");
     
@@ -50,10 +50,8 @@
     _variables = _themeData[@"defined"];
 }
 
-- (UIFont *) themedFont:(NSString *)fontPath {
-    
-    NSAssert(fontPath, @"Font Path must not be nil");
-    
+- (nonnull UIFont *) themedFont:(nonnull NSString *)fontPath {
+	
     NSArray *fontData = [self.themeData valueForKeyPath:fontPath];
     
     if ([fontData isKindOfClass:[NSString class]]) {
@@ -66,9 +64,7 @@
     return [UIFont fontWithName:fontData[0] size:[fontData[1] floatValue]];;
 }
 
-- (UIColor *) themedColor:(NSString *)colorPath {
-    
-    NSAssert(colorPath, @"Color Path must not be nil");
+- (nonnull UIColor *) themedColor:(nonnull NSString *)colorPath {
     
     NSArray *colorData = [self.themeData valueForKeyPath:colorPath];
     
@@ -84,12 +80,14 @@
     return [[UIColor esp_colorFromHexString:color] colorWithAlphaComponent:alpha];
 }
 
-- (UIImage *) themedImage:(NSString *)imagePath {
-    
-    NSAssert(imagePath, @"Image Path must not be nil");
+- (nonnull UIImage *) themedImage:(nonnull NSString *)imagePath {
     
     NSString *imageName = [self.themeData valueForKeyPath:imagePath];
-    NSAssert(imageName, @"You must request a valid image path");
+	NSAssert(imageName.length > 0, @"You must request a valid image path");
+	
+	if (self.variables[imageName] != nil) {
+		imageName = self.variables[imageName];
+	}
 
     return [UIImage imageNamed:imageName];
 }

@@ -10,10 +10,10 @@
 
 @interface ESPThemeManager : NSObject
 
-- (instancetype) initWithJSONFile:(NSString *)jsonFile;
+- (nullable instancetype) initWithJSONFile:(nonnull NSString *)jsonFile;
 
-- (UIFont *) themedFont:(NSString *)fontPath;
-- (UIColor *) themedColor:(NSString *)colorPath;
-- (UIImage *) themedImage:(NSString *)imagePath;
+- (nonnull UIFont *) themedFont:(nonnull NSString *)fontPath;
+- (nonnull UIColor *) themedColor:(nonnull NSString *)colorPath;
+- (nonnull UIImage *) themedImage:(nonnull NSString *)imagePath;
 
 @end

@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		BCC8C3261B7A2F3300498043 /* libESPThemeManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC8C31A1B7A2F3300498043 /* libESPThemeManager.a */; };
 		BCC8C3361B7A2FB400498043 /* ESPThemeManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C3341B7A2FB400498043 /* ESPThemeManagerTests.m */; };
-		BCC8C3371B7A2FB400498043 /* ESPThemeTest.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCC8C3351B7A2FB400498043 /* ESPThemeTest.bundle */; };
-		BCC8C33D1B7A2FCB00498043 /* ESPThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C33A1B7A2FCB00498043 /* ESPThemeManager.m */; };
-		BCC8C33E1B7A2FCB00498043 /* ESPThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C33A1B7A2FCB00498043 /* ESPThemeManager.m */; };
-		BCC8C33F1B7A2FCB00498043 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C33C1B7A2FCB00498043 /* UIColor+Hex.m */; };
-		BCC8C3401B7A2FCB00498043 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8C33C1B7A2FCB00498043 /* UIColor+Hex.m */; };
+		BE6BDEE71D002370007CDD68 /* ESPThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6BDEE41D002370007CDD68 /* ESPThemeManager.m */; };
+		BE6BDEE81D002370007CDD68 /* ESPThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6BDEE41D002370007CDD68 /* ESPThemeManager.m */; };
+		BE6BDEE91D002370007CDD68 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6BDEE61D002370007CDD68 /* UIColor+Hex.m */; };
+		BE6BDEEA1D002370007CDD68 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6BDEE61D002370007CDD68 /* UIColor+Hex.m */; };
+		BE6BDEF11D002587007CDD68 /* horse.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6BDEEF1D002587007CDD68 /* horse.png */; };
+		BE6BDEF21D002587007CDD68 /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = BE6BDEF01D002587007CDD68 /* index.json */; };
+		BE6BDEF81D0027D3007CDD68 /* horse.png in Resources */ = {isa = PBXBuildFile; fileRef = BE6BDEF61D002795007CDD68 /* horse.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +45,13 @@
 		BCC8C3251B7A2F3300498043 /* ESPThemeManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESPThemeManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC8C32B1B7A2F3300498043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCC8C3341B7A2FB400498043 /* ESPThemeManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPThemeManagerTests.m; sourceTree = "<group>"; };
-		BCC8C3351B7A2FB400498043 /* ESPThemeTest.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ESPThemeTest.bundle; sourceTree = "<group>"; };
-		BCC8C3391B7A2FCB00498043 /* ESPThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPThemeManager.h; sourceTree = "<group>"; };
-		BCC8C33A1B7A2FCB00498043 /* ESPThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPThemeManager.m; sourceTree = "<group>"; };
-		BCC8C33B1B7A2FCB00498043 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		BCC8C33C1B7A2FCB00498043 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		BE6BDEE31D002370007CDD68 /* ESPThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPThemeManager.h; sourceTree = "<group>"; };
+		BE6BDEE41D002370007CDD68 /* ESPThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPThemeManager.m; sourceTree = "<group>"; };
+		BE6BDEE51D002370007CDD68 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		BE6BDEE61D002370007CDD68 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		BE6BDEEF1D002587007CDD68 /* horse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse.png; sourceTree = "<group>"; };
+		BE6BDEF01D002587007CDD68 /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
+		BE6BDEF61D002795007CDD68 /* horse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horse.png; path = ESPThemeManagerTests/horse.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,8 @@
 		BCC8C3111B7A2F3300498043 = {
 			isa = PBXGroup;
 			children = (
-				BCC8C31C1B7A2F3300498043 /* ESPThemeManager */,
+				BE6BDEF61D002795007CDD68 /* horse.png */,
+				BE6BDEE21D002370007CDD68 /* Classes */,
 				BCC8C3291B7A2F3300498043 /* ESPThemeManagerTests */,
 				BCC8C31B1B7A2F3300498043 /* Products */,
 			);
@@ -87,19 +92,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BCC8C31C1B7A2F3300498043 /* ESPThemeManager */ = {
-			isa = PBXGroup;
-			children = (
-				BCC8C3381B7A2FCB00498043 /* Classes */,
-			);
-			path = ESPThemeManager;
-			sourceTree = "<group>";
-		};
 		BCC8C3291B7A2F3300498043 /* ESPThemeManagerTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE6BDEEF1D002587007CDD68 /* horse.png */,
+				BE6BDEF01D002587007CDD68 /* index.json */,
 				BCC8C3341B7A2FB400498043 /* ESPThemeManagerTests.m */,
-				BCC8C3351B7A2FB400498043 /* ESPThemeTest.bundle */,
 				BCC8C32A1B7A2F3300498043 /* Supporting Files */,
 			);
 			path = ESPThemeManagerTests;
@@ -113,16 +111,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BCC8C3381B7A2FCB00498043 /* Classes */ = {
+		BE6BDEE21D002370007CDD68 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BCC8C3391B7A2FCB00498043 /* ESPThemeManager.h */,
-				BCC8C33A1B7A2FCB00498043 /* ESPThemeManager.m */,
-				BCC8C33B1B7A2FCB00498043 /* UIColor+Hex.h */,
-				BCC8C33C1B7A2FCB00498043 /* UIColor+Hex.m */,
+				BE6BDEE31D002370007CDD68 /* ESPThemeManager.h */,
+				BE6BDEE41D002370007CDD68 /* ESPThemeManager.m */,
+				BE6BDEE51D002370007CDD68 /* UIColor+Hex.h */,
+				BE6BDEE61D002370007CDD68 /* UIColor+Hex.m */,
 			);
 			name = Classes;
-			path = ../../../Classes;
+			path = ../../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +133,7 @@
 				BCC8C3161B7A2F3300498043 /* Sources */,
 				BCC8C3171B7A2F3300498043 /* Frameworks */,
 				BCC8C3181B7A2F3300498043 /* CopyFiles */,
+				BE6BDEF71D0027CD007CDD68 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -203,7 +202,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC8C3371B7A2FB400498043 /* ESPThemeTest.bundle in Resources */,
+				BE6BDEF11D002587007CDD68 /* horse.png in Resources */,
+				BE6BDEF21D002587007CDD68 /* index.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE6BDEF71D0027CD007CDD68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6BDEF81D0027D3007CDD68 /* horse.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC8C33D1B7A2FCB00498043 /* ESPThemeManager.m in Sources */,
-				BCC8C33F1B7A2FCB00498043 /* UIColor+Hex.m in Sources */,
+				BE6BDEE71D002370007CDD68 /* ESPThemeManager.m in Sources */,
+				BE6BDEE91D002370007CDD68 /* UIColor+Hex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC8C33E1B7A2FCB00498043 /* ESPThemeManager.m in Sources */,
-				BCC8C3401B7A2FCB00498043 /* UIColor+Hex.m in Sources */,
+				BE6BDEE81D002370007CDD68 /* ESPThemeManager.m in Sources */,
+				BE6BDEEA1D002370007CDD68 /* UIColor+Hex.m in Sources */,
 				BCC8C3361B7A2FB400498043 /* ESPThemeManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +395,7 @@
 				BCC8C3301B7A2F3300498043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCC8C3311B7A2F3300498043 /* Build configuration list for PBXNativeTarget "ESPThemeManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +404,7 @@
 				BCC8C3331B7A2F3300498043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
